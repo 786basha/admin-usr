@@ -41,13 +41,13 @@ header{
 }
 
 .circle1{
-    background-image: url('/usr1.png');
+    background-image: url('/img/usr1.png');
     background-position:;
     background-size: cover;
 }
 
 .circle2{
-    background-image: url('/adm1.png');
+    background-image: url('/img/adm1.png');
     background-size: 100% 100%;
     border: 1px solid black;
     
