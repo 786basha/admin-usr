@@ -4,54 +4,105 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KING</title>
-    <link rel="shortcut icon" href="/console.png" type="image/x-icon">
-    <link rel="stylesheet" href="style.css">
+    <title>MASTHAN BASHA</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        header{
+            display: flex;
+            margin: auto;
+            flex-wrap: wrap;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        .mb{
+            display: flex;
+            flex-direction: column;
+            font-size: 25px;
+            
+            margin: auto;
+            padding: 10px;
+        }
+        .mb a{
+            width: 18vw;
+            font-weight: bold;
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            text-transform:capitalize;
+            border-radius: 3px;
+            text-align: center;
+            text-decoration: none;
+            margin: 10px;
+            padding: 10px;
+            background-color: violet;
+            box-shadow: 0px 0px 10px black;
+        }
+        .mb a:hover{
+            background-color: mediumvioletred;
+            color: white;
+            transition: 1s;
+            box-shadow: 0px 0px 10px gray;
+        }
+        #wrapper {
+	position: relative;
+  margin-left: 50px;
+  margin-top: 50px;
+	animation:pulse 1s infinite;
+}
+
+
+#pulsingheart { 
+  position: relative; 
+  width: 150px; 
+  height: 150px;
+  
+  top: 5vh;
+} 
+
+#pulsingheart:before, #pulsingheart:after { 
+  position: absolute; 
+  content: ""; 
+  left: 50px; 
+  top: 0; 
+  width: 50px; 
+  height: 80px; 
+  background: #aa0000; 
+  border-radius: 50px 50px 0 0; 
+  transform: rotate(-45deg);  
+  transform-origin: 0 100%;
+  animation:pulsecolor 1s infinite;
+} 
+
+#pulsingheart:after { 
+  left: 0; 
+  transform: rotate(45deg); 
+  transform-origin :100% 100%;
+  animation:pulsecolor 1s infinite;
+}
+
+@keyframes pulse {
+	10% {transform: scale(1.1)}
+}
+
+@keyframes pulsecolor {
+  10% {background: #dd0000}
+}
+        
+    </style>
 </head>
 <body>
     <header>
-        <div class="usr">
-            <div class="circle1"></div>
-            <div class="txt">
-                <h3>THIS IS USER PAGE</h3>
-                <div class="input">
-                    <input type="text" placeholder="Username" required id="unam">
-                    <input type="password" placeholder="Password" id="upass`" required>
-                    
-
-                    <a  onclick="usr()">SUBMIT</a>
-
-
-                    <!-- <button onclick="usr();">Submit</button> -->
-                </div>
-                <div class="reqs">
-                    <a href="/html/register.html">Register</a> 
-                    <h4>  | </h4>
-                    <a href="#">Forgot password ?</a>
-                </div>
-                <p id="res"></p>
-                <p id="val"></p>
-                <!-- <input type="button" value="SUBMIT" onclick="usr()"> -->
-            </div>
+        <div id="wrapper">
+            <div id="pulsingheart"></div>
         </div>
-
-
-        <div class="adm">
-            <div class="circle2"></div>
-            <div class="txt">
-                <h3>THIS IS ADMIN PAGE</h3>
-                <div class="input">
-                    <input type="text" placeholder="User ID" >
-                    <input type="email" name="" placeholder="Email" id="" >
-                    <input type="password" placeholder="Password" id="dem0" >
-                    <button type="submit" onclick="adm()">SUBMIT</button>
-                </div>
-                <div class="display">
-                    <a href="/html/home.html">Display users</a>
-                </div>
-            </div>
+        <div class="mb">
+            <a href="/html/main.html">home</a>
+            <a href="/html/home.html">Register</a>
         </div>
-    </header>    
-    <script src="/one.js"></script>
+    </header>
 </body>
 </html>
