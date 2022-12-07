@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME</title>
+    <link rel="stylesheet" href="/style.css">
+    <style>
+        .tab{
+            display: flex;
+            flex-direction: column;
+        }
+        .tab p{
+            
+            position: relative;
+            top: 5vh;
+        }
+        #dis{
+            font-weight: bold;
+            background-color: turquoise;
+            text-align: center;
+            height: max-content;
+            padding: auto;overflow:visible;
+        }
+    </style>
+</head>
+<body>
+    <div class="new">
+        <input type="text" placeholder="USERNAME" id="addusr" required>
+        <input type="button" value="Add user" placeholder="Add User" onclick="Add()">
+        <p id="req"> </p>
+    </div>
+    <div class="tab">
+        <button onclick="show()">Show</button>
+
+        <p>Displaying names in database</p>
+    <p id="dis"></p>
+    </div>
+
+    <script src="/one.js"></script>
+</body>
+</html>

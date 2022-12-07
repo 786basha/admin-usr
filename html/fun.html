@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fun</title>
+    <style>
+        .container{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            overflow: hidden;
+         
+        }
+        .card{
+            margin-top: 25vh;
+            box-shadow: 0px 0px 20px black;
+            width: 200px;
+            height: 300px;
+            background-color:slategray;
+            border-radius: 10px;
+            display: flex;
+
+            flex-direction: column;
+        }
+        .container{
+            display: flex;
+            gap: 10px;
+        }
+        .card{
+            transition: 300ms ease-in-out;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .card + .card{
+            margin-left: -6%;
+        }
+        .card:hover{
+            transform: rotate(-4deg);
+        }
+        .card:hover ~ .card{
+            z-index: 1;
+            translate: 60px;
+        }
+        button{
+            font-weight: bold;
+            background-color: skyblue;
+            width: 200px;
+            cursor: pointer;
+            
+            padding: 10px;
+            border-radius: 10px;
+            border: none;
+        }
+        @media only screen and (max-width:600px) {
+            .card{
+                width: 150px;
+                height: 200px;
+                overflow: hidden;
+                background-color: rosybrown;
+                margin-top: 10vh;
+                margin-bottom: 10px;
+            }
+        }
+        /* .log{
+            width: 50%;
+            height: 50%;
+        } */
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="log">
+                <img src="/console.png" alt="">
+            </div>
+            <!-- <div class="btn">
+                <button type="submit">Connect</button>
+            </div> -->
+        </div>
+        <div class="card">
+            <div class="log">
+                <img src="/github.png" alt="" >
+            </div>
+        </div>
+        <div class="card">
+            <div class="log">
+                <img src="/happy-cloud.png" alt="" >
+            </div>
+        </div>
+        <div class="card">
+            <div class="log">
+                <img src="/controller.png" alt="" width="100px">
+            </div>
+        </div>
+        <div class="card">
+            <div class="log">
+                <img src="/gun.png" alt="" width="100px">
+            </div>
+        </div>
+        <div class="card">
+            <div class="log">
+                <img src="/hacking.png" alt="" width="100px">
+            </div>
+        </div>
+    </div>
+    <script src="/one.js"></script>
+</body>
+</html>

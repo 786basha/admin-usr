@@ -71,10 +71,18 @@ header{
 }
 
 h3{
-    background-color:violet;
+    background-color:steelblue;
+    color: white;
     margin-top: 5%;
     padding: 10px;
     text-align: center;
+    border-bottom-width: 2px;
+    border: 1px solid black;
+}
+
+h3:hover{
+    background-color:violet;
+    transition: 1s;
 }
 
 .input{
@@ -97,8 +105,10 @@ input{
     font-size: 17px;
 }
 
+.input a,
 button{
-    width: max-content;
+    width: 10vw;
+    text-align: center;
     margin: auto;
     padding: 10px;
     position: relative;
@@ -107,9 +117,26 @@ button{
     font-weight: bold;
     font-size: 15px;
     color: aquamarine;
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+}
 
+button:hover{
+    position: relative;
+    
+}
+
+.reqs{
+    position: relative;
+    top: 9vh;
     display: flex;
-    
-    
-  
+    justify-content: center;
+    justify-content: space-around;
+}
+
+.display a{
+    position: relative;
+    top: 7vh;
+    left: 5vw;
 }
