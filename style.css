@@ -107,7 +107,7 @@ input{
 
 .input a,
 button{
-    width: 10vw;
+    width: max-content;
     text-align: center;
     margin: auto;
     padding: 10px;
@@ -135,8 +135,19 @@ button:hover{
     justify-content: space-around;
 }
 
+.display{
+    display: flex;
+    justify-content: center;
+}
+
 .display a{
     position: relative;
-    top: 7vh;
-    left: 5vw;
+    top: 7.5vh;
+    
+}
+
+@media only screen and(max-width:500px) {
+    header{
+        margin: 2%;
+    }
 }
