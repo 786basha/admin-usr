@@ -70,6 +70,7 @@ body {
     .about,
     .team,
     .contact{
+        visibility: visible;
         max-width: 480px;
         height: 100vh;
         border-radius: 10px;
@@ -104,6 +105,37 @@ body {
         background-size: cover;
     }
 }
+
+    @media only screen and (min-width:1080px) {
+    .team,
+    .about,
+    .contact{
+        width: 50vh;
+        border: 1px solid black;
+        margin: 10px;
+    }
+    .team h3,
+    .about h3,
+    .contact h3{
+        padding: 10px;
+    }
+    }
+
+    @media only screen and (max-width:750px){
+        .team,
+    .about,
+    .contact{
+        width: 50vh;
+        border: 1px solid black;
+        margin: 10px;
+    }
+    }
+    .team h3,
+    .about h3,
+    .contact h3{
+        padding: 10px;
+    }
+    }
 
 
 </style>
